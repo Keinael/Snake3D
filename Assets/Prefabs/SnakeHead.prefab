@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 33350755576565314}
   - component: {fileID: 135907345936832390}
   - component: {fileID: 23011155634390474}
+  - component: {fileID: 114462398189741790}
+  - component: {fileID: 114144997429494088}
   m_Layer: 0
   m_Name: SnakeHead
-  m_TagString: Untagged
+  m_TagString: SnakeHead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +85,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495114231887842}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114144997429494088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1495114231887842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c661d07aa363624a8ce0fc327e3e59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  tailObjects: []
+  offset: -0.5
+  rotationSpeed: 200
+--- !u!114 &114462398189741790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1495114231887842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c661d07aa363624a8ce0fc327e3e59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  tailObjects: []
+  offset: -0.5
+  rotationSpeed: 0
 --- !u!135 &135907345936832390
 SphereCollider:
   m_ObjectHideFlags: 1

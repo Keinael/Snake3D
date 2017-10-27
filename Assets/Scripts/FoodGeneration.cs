@@ -14,17 +14,17 @@ public class FoodGeneration : MonoBehaviour {
 
 	public Vector3 curPos;
 
-	void Start () {
-		RandomPos ();
-		curFood = GameObject.Instantiate(foodPrefab,curPos,Quaternion.identity) as GameObject;	
-	}
 
-	void RandomPos()
-	{
+	void AddNewFood() {
 		curPos = new Vector3 (Random.Range(xSize*-1,xSize),0.2f,Random.Range(zSize*-1,zSize));
+		curFood = GameObject.Instantiate (foodPrefab, curPos, Quaternion.identity) as GameObject;	
 	}
 
 	void Update () {
-		
+		if (!curFood) {
+			AddNewFood ();
+		} else {
+			return;
+		}
 	}
 }
