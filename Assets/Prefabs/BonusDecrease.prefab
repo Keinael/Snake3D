@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33874631091644610}
   - component: {fileID: 136962459015616196}
   - component: {fileID: 23715086650520090}
+  - component: {fileID: 114230139161842770}
   m_Layer: 0
-  m_Name: Poison
+  m_Name: BonusDecrease
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,6 +84,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1987627010899598}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114230139161842770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987627010899598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63be441295e4f8a45a792ccbe877d9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136962459015616196
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -90,7 +102,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1987627010899598}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2

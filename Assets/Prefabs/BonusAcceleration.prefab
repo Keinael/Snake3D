@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33669249152992900}
   - component: {fileID: 136016106995851984}
   - component: {fileID: 23208892443751046}
+  - component: {fileID: 114148919446151368}
   m_Layer: 0
   m_Name: BonusAcceleration
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297243704610558}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.02, y: 0.2, z: 0}
+  m_LocalPosition: {x: 4.4577966, y: 0.20000006, z: -1.3428233}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +84,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297243704610558}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114148919446151368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297243704610558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3aa41bdbb23dfe479cde4224dd636bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136016106995851984
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -90,7 +102,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297243704610558}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2

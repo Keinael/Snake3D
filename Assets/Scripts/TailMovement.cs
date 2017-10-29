@@ -5,30 +5,38 @@ using UnityEngine;
 public class TailMovement : MonoBehaviour {
 
 	public float speed;
-
-	public Vector3 tailTarget;   //Указывается позиция последнего элемента хвоста, за 
-                                    //которым будет двигаться новый элемент
-	public SnakeMovement mainSnake;
-    
+	public Vector3 tailTarget;   
+	public SnakeMovement mainSnake;    
 	public GameObject tailTargetObj;
-
 	public int indx;
-	// Use this for initialization
+
+
+
 	void Start () 
-	{		
-		
+	{			
         mainSnake = GameObject.FindGameObjectWithTag("SnakeHead").GetComponent<SnakeMovement>();
-		speed = mainSnake.speed+1;
-		tailTargetObj = mainSnake.tailObjects [mainSnake.tailObjects.Count - 2];
+
+		if (mainSnake.tailObjects.Count <= 2) {
+			tailTargetObj = GameObject.FindGameObjectWithTag("SnakeHead");
+		} else {
+			tailTargetObj = mainSnake.tailObjects [mainSnake.tailObjects.Count - 2];
+		}			
 		indx = mainSnake.tailObjects.IndexOf (gameObject);
-	}
-	
-	// Update is called once per frame
+
+	}	
+
 	void Update () 
-	{
+	{		
+		speed = mainSnake.speed +1 ;
 		tailTarget = tailTargetObj.transform.position;
 		transform.LookAt (tailTarget);
 		transform.position = Vector3.Lerp (transform.position, tailTarget, Time.deltaTime * speed);
+	}
+
+	public void DecreaseTail() {
+		GameObject.FindGameObjectWithTag ("SnakePlus");
+		Destroy(gameObject);
+		mainSnake.tailObjects.RemoveAt (mainSnake.tailObjects.Count - 1);
 	}
 
 	void OnTriggerEnter(Collider other){
