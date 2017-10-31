@@ -1,6 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SnakeMovement.cs">
+    <Files>
+      <File FileName="Assets\Scripts\SnakeMovement.cs" Line="41" Column="3" />
+      <File FileName="Assets\Scripts\TailMovement.cs" Line="36" Column="40" />
+      <File FileName="Assets\Scripts\Redirection.cs" Line="8" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -9,18 +9,14 @@ public class TailMovement : MonoBehaviour {
 	public SnakeMovement mainSnake;    
 	public GameObject tailTargetObj;
 	public int indx;
-	public bool currentDirection;
-
 
 
 	void Start () {
-		currentDirection = true;
 		mainSnake = GameObject.FindGameObjectWithTag ("SnakeHead").GetComponent<SnakeMovement> ();	
-		indx = mainSnake.tailObjects.IndexOf (gameObject);
-		Direction ();
 	}	
 
 	void Update () {	
+		Direction ();
 		speed = mainSnake.speed + 1;
 		tailTarget = tailTargetObj.transform.position;
 		transform.LookAt (tailTarget);
@@ -28,15 +24,16 @@ public class TailMovement : MonoBehaviour {
 	}	
 
 	void Direction () {
-		if (mainSnake.tailObjects.Count <= 2) {
+		indx = mainSnake.tailObjects.IndexOf (gameObject);
+		if (indx == 0) {
 			tailTargetObj = GameObject.FindGameObjectWithTag ("SnakeHead");
 		} else {
-			tailTargetObj = mainSnake.tailObjects [mainSnake.tailObjects.Count - 2];
+			tailTargetObj = mainSnake.tailObjects[indx - 1];
 		}
 	}
 
 	public void DecreaseTail() {
-		Destroy(mainSnake.tailObjects[mainSnake.tailObjects.Count - 1]);        
+		Destroy(mainSnake.tailObjects[mainSnake.tailObjects.Count -1]);        
 		mainSnake.tailObjects.RemoveAt (mainSnake.tailObjects.Count - 1);        
 	}
 

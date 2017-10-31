@@ -14,6 +14,9 @@ public class SnakeMovement : MonoBehaviour {
 	public int accelTime;
 	public int decelTime;
 
+	void Start () {
+		tailObjects.RemoveAt(0);
+	}
 
 	void Update () {		
 		transform.Translate (Vector3.forward * speed * Time.deltaTime);
@@ -28,7 +31,7 @@ public class SnakeMovement : MonoBehaviour {
 	}
 
     public void AddTail () {
-			if (tailObjects.Count == 1) {					 
+			if (tailObjects.Count == 0) {					 
 				newTailPos = GameObject.FindGameObjectWithTag ("SnakeHead").transform.position;
 			} else {			
 				newTailPos = tailObjects [tailObjects.Count - 1].transform.position;
@@ -40,23 +43,26 @@ public class SnakeMovement : MonoBehaviour {
 		Destroy(tailObjects[tailObjects.Count - 1]);        
 		tailObjects.RemoveAt (tailObjects.Count - 1);        
 	}
-	/*		
+		
 	public void TrigerChanger (GameObject myobject) {
 		myobject.GetComponent<SphereCollider> ().isTrigger = !myobject.GetComponent<SphereCollider> ().isTrigger;
 	}
 
 	public void Redirection () {
-		Vector3 firstObjPosition = gameObject.transform.position;
+		if (tailObjects.Count == 0) {
+			gameObject.transform.Rotate (new Vector3 (0, 180f, 0));
+		} else {
 		Vector3 secondObjPosition = tailObjects [tailObjects.Count - 1].transform.position;
 		TrigerChanger (gameObject);
 		TrigerChanger (tailObjects [tailObjects.Count - 1]);
 		gameObject.transform.position = secondObjPosition;
-		tailObjects [tailObjects.Count - 1].transform.position = firstObjPosition;
-		tailObjects.Reverse();
+		gameObject.transform.Rotate(new Vector3(0, 180f, 0));
 		TrigerChanger (gameObject);
 		TrigerChanger (tailObjects [tailObjects.Count - 1]);
+		tailObjects.Reverse();
+		}
 	}
-	*/
+
 	void AccelTimer () {		
 		accelTime++;
 		if (accelTime == 5) {
