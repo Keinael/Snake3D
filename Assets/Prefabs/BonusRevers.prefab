@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33563702418219452}
   - component: {fileID: 136230357069475380}
   - component: {fileID: 23613376006141038}
+  - component: {fileID: 114866128285576576}
   m_Layer: 0
   m_Name: BonusRevers
   m_TagString: Untagged
@@ -83,6 +84,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1983959451665710}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114866128285576576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983959451665710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915202d17b4546b42aa7fbda20295a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136230357069475380
 CapsuleCollider:
   m_ObjectHideFlags: 1

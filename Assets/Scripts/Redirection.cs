@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Acceleration : MonoBehaviour {
+public class Redirection : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag ("SnakeHead")) {
-			other.GetComponent<SnakeMovement>().Acceleration();
+//			other.GetComponent<SnakeMovement> ().Redirection ();
 			Destroy (gameObject);
 		}
 	}

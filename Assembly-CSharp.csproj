@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Deceleration.cs" />
      <Compile Include="Assets\Scripts\Food.cs" />
      <Compile Include="Assets\Scripts\FoodGeneration.cs" />
+     <Compile Include="Assets\Scripts\Redirection.cs" />
      <Compile Include="Assets\Scripts\SnakeDecrease.cs" />
      <Compile Include="Assets\Scripts\SnakeMovement.cs" />
      <Compile Include="Assets\Scripts\TailMovement.cs" />
