@@ -212,10 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c661d07aa363624a8ce0fc327e3e59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  rotationSpeed: 250
-  tailObjects:
-  - {fileID: 0}
+  speed: 4
+  rotationSpeed: 200
+  tailObjects: []
   tailPrefab: {fileID: 1531056919798172, guid: 79339d71be4ab3d4fa8cce049fc52bce, type: 2}
   accelTime: 0
   decelTime: 0
@@ -330,6 +329,7 @@ GameObject:
   - component: {fileID: 383459043}
   - component: {fileID: 383459042}
   - component: {fileID: 383459046}
+  - component: {fileID: 383459047}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -420,11 +420,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df31fb6c57b7f3f48b7dc4ff1890bc01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodPrefab: {fileID: 1060815372291942, guid: 798582fc77c84454d9d7844b428a0ea4, type: 2}
+  bonusSnakeFoodPrefab: {fileID: 1060815372291942, guid: 798582fc77c84454d9d7844b428a0ea4,
+    type: 2}
+  bonusAccelerationPrefab: {fileID: 1297243704610558, guid: 7cab8e2c8b8248b4ea1ecbb81b63c271,
+    type: 2}
+  bonusDecelerationPrefab: {fileID: 1801327692525894, guid: 0bf543a7a95b9434cb9727a7d19b3fdc,
+    type: 2}
+  bonusDecreasePrefab: {fileID: 1987627010899598, guid: df54d04462fb9f54288e95d1ae34f147,
+    type: 2}
+  bonusReversPrefab: {fileID: 1983959451665710, guid: 2c1f5cabf63d17846a5498ac4716b0a4,
+    type: 2}
   xSize: 8.9
   zSize: 8.9
   curFood: {fileID: 0}
-  curPos: {x: 0, y: 0, z: 0}
+  curBonus: {fileID: 0}
+  curFoodPos: {x: 0, y: 0, z: 0}
+  curBonusPos: {x: 0, y: 0, z: 0}
+  bonusNumber: 0
+--- !u!114 &383459047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 383459041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4005056849401e4eb5e97aad262155e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &537388295
 Prefab:
   m_ObjectHideFlags: 0

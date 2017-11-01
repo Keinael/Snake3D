@@ -1,0 +1,29 @@
+[33mcommit 0cd2d2ba9e1a5dc9060e8cca4e1d464094dccd34[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Keinael <usenko.ua@gmail.com>
+Date:   Tue Oct 31 19:37:36 2017 +0200
+
+    Adding reverse bonus. New-made tail sections movement script.
+
+[33mcommit f86ccc1934f2fd17dec0c074fa1f0e128f04bf43[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Keinael <usenko.ua@gmail.com>
+Date:   Tue Oct 31 02:25:13 2017 +0200
+
+    Adding snake decrease bonus. Reverse bonus development in process
+
+[33mcommit cae05e2c3865cb907f3cd8171060c249037fe04b[m
+Author: Keinael <usenko.ua@gmail.com>
+Date:   Mon Oct 30 00:03:43 2017 +0200
+
+    Adding speed increase-decrease bonuses. Bug fixes
+
+[33mcommit d7f1ef2d51fc7ccee85cc5f5208786e7cf3eb303[m
+Author: Keinael <usenko.ua@gmail.com>
+Date:   Fri Oct 27 15:43:00 2017 +0300
+
+    Adding movement script for snake, and tail. Snake dead after eating itself
+
+[33mcommit 9408d782411532b867d060030d342fd5b1fd3eae[m
+Author: Keinael <usenko.ua@gmail.com>
+Date:   Wed Oct 25 21:24:57 2017 +0300
+
+    Creating scene, addit food generation

@@ -87,7 +87,6 @@ public class SnakeMovement : MonoBehaviour {
 
 	public void Deceleration () {
 		decelTime = 0;	
-		Debug.Log (decelTime);
 		speed -= 2;
 		InvokeRepeating ("DecelTimer", 0, 1);
 	}
