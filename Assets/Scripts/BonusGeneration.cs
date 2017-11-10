@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BonusGeneration : MonoBehaviour {
 
@@ -18,9 +16,10 @@ public class BonusGeneration : MonoBehaviour {
 	public int bonusNumber;
 
 
-/*	void Start () {	
-		InvokeRepeating ("Spawn", 0, 5);
-	}
+	void Start () {	
+		InvokeRepeating ("Spawn", 5, 10);
+}
+
 
 	void Spawn () {
 		bonusNumber = Random.Range (1, 4);
@@ -39,12 +38,12 @@ public class BonusGeneration : MonoBehaviour {
 			break;
 		}
 	}
-
-	void CreatingObject (GameObject bonus) {
+	void CreatingObject (GameObject bonus) 
+	{
 		curBonusPos = new Vector3 (Random.Range(xSize*-1,xSize),0.2f,Random.Range(zSize*-1,zSize));
-		curBonus = GameObject.Instantiate (bonus, curBonusPos, Quaternion.identity) as GameObject;
+		curBonus = GameObject.Instantiate (bonus, curBonusPos, Quaternion.Euler(new Vector3 (90, Random.Range(0, 360), 0))) as GameObject;
 	}
-*/
+
 	void AddNewFood() {
 		curFoodPos = new Vector3 (Random.Range(xSize*-1,xSize),0.2f,Random.Range(zSize*-1,zSize));
 		curFood = GameObject.Instantiate (bonusSnakeFoodPrefab, curFoodPos, Quaternion.identity) as GameObject;	

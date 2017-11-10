@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Администратор\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_Snake.-1709062311.00" t="ExcludeRecursive" />
+    <e p="D:\Google Диск\Unity\Snake" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Acceleration.cs" t="Include" />
+          <e p="BonusGeneration.cs" t="Include" />
+          <e p="Deceleration.cs" t="Include" />
+          <e p="Food.cs" t="Include" />
+          <e p="Redirection.cs" t="Include" />
+          <e p="SnakeDecrease.cs" t="Include" />
+          <e p="SnakeMovement.cs" t="Include" />
+          <e p="TailMovement.cs" t="Include" />
+          <e p="test.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Snake.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

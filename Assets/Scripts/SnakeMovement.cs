@@ -14,9 +14,6 @@ public class SnakeMovement : MonoBehaviour {
 	public int accelTime;
 	public int decelTime;
 
-	void Start () {
-		tailObjects.RemoveAt(0);
-	}
 
 	void Update () {		
 		transform.Translate (Vector3.forward * speed * Time.deltaTime);

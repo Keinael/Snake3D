@@ -36,12 +36,13 @@ public class TailMovement : MonoBehaviour {
 		Destroy(mainSnake.tailObjects[mainSnake.tailObjects.Count -1]);        
 		mainSnake.tailObjects.RemoveAt (mainSnake.tailObjects.Count - 1);        
 	}
-
+	
 	void OnTriggerEnter(Collider other){
 		if (other.CompareTag ("SnakeHead")) {
 			if (indx > 2) {
 				Application.LoadLevel (Application.loadedLevel);
 			}
 		}
-	}
+
+	}	
 }
